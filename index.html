@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS filters</title>
+        <script src="src/js/app.js" type="module"></script>
+        <link rel="stylesheet" href="src/css/app.css">
+    </head>
+
+    <body>
+
+    <h1>CSS filters</h1>
+
+    <button id="js-img-select" class="select-image-btn">Select image...
+        <input type="file" id="js-image-upload-btn">
+    </button>
+
+    <div class="main-container">
+        <div id="js-img-container" class="img-container">
+            <img src="" alt="Please select a valid image..." id="js-image-example-img">
+        </div>
+
+        <div class="ranges">
+            <label for="js-filter-greyscale-range">Grayscale level:</label>
+            <input type="range" id="js-filter-greyscale-range" min="0" max="100">
+
+            <label for="js-filter-blur">Blur:</label>
+            <input type="range" id="js-filter-blur" min="0" max="100">
+
+            <label for="js-filter-brightness">Brightness:</label>
+            <input type="range" id="js-filter-brightness" min="0" max="20" data-value="1">
+
+            <label for="js-filter-contrast">Contrast:</label>
+            <input type="range" id="js-filter-contrast" min="0" max="20" data-value="1">
+
+            <label for="js-filter-saturate">Saturation:</label>
+            <input type="range" id="js-filter-saturate" min="0" max="20" data-value="1">
+
+            <label for="js-filter-hue-rotate">Hue rotation:</label>
+            <input type="range" id="js-filter-hue-rotate" min="0" max="359">
+
+            <label for="js-filter-invert">Invert:</label>
+            <input type="range" id="js-filter-invert" min="0" max="1" step=".05">
+        </div>
+    </div>
+
+    <div class="css-code" id="js-css-code"></div>
+
+    </body>
+</html>

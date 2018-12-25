@@ -1,0 +1,76 @@
+/**
+ * CSS filters
+ * Copyright (C) Simon Raichl 2018
+ * MIT License
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Segoe UI, sans-serif;
+    box-sizing: border-box;
+}
+
+body * {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 50px;
+    font-weight: 200;
+    color: #2372ab;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    margin: 4rem 0;
+}
+
+img, .img-container {
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+input[type=range] {
+    margin: .3rem auto;
+    min-width: 240px;
+}
+
+.select-image-btn {
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: #4198d8;
+    color: #fff;
+    transition: .7s;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+.select-image-btn:hover {
+    background: #2372ab;
+}
+
+.ranges {
+    margin: auto;
+    width: fit-content;
+}
+
+.css-code {
+    margin: 1rem;
+    text-align: center;
+    font-size: 14px;
+    padding: .5rem;
+    background: #2372ab;
+    color: #fff;
+    border-radius: 50px;
+}
