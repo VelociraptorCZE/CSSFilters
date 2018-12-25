@@ -53,7 +53,7 @@ export default class RangeControl {
     /**
      * Gets keys from {this.ranges} and concatenate
      * key (representing css property) + element.value + unit
-     * to temporary variable style a once it's done, returns it.
+     * to temporary variable style and once it's done, returns it.
      * @returns {string}
      */
 

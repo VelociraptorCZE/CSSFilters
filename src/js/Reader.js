@@ -32,7 +32,7 @@ export default class Reader extends ResponsiveImage {
             };
 
             try {
-                pattern.test(file.name.toLowerCase()) ? f.readAsDataURL(file) : null;
+                if (pattern.test(file.name.toLowerCase())) f.readAsDataURL(file);
             }
             catch {}
         });
